@@ -1,0 +1,149 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+
+}
+.container{
+    max-width: 960px;
+    margin: 0px auto;
+
+}
+#header{
+    background-color: #131921;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+}
+#logo{
+    padding: 5px 0px;
+
+}
+#main-menu{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#main-menu li a{
+    color: #f8f8f8;
+    display: block;
+    padding: 18px 20px;
+    text-decoration: none;
+}
+#main-menu ul.sub-menu{
+    position: absolute;
+    background-color: #131921;
+    padding: 15px 0px;
+    list-style: none;
+    width: 200px;
+    border: 1px solid #434343;
+    display: none;
+}
+#main-menu ul.sub-menu a{
+    padding: 8px 15px;
+    border-bottom: 1px solid rgb(62, 62, 62);
+}
+#main-menu ul.sub-menu li:hover a{
+    border-bottom: 1px solid rgb(125, 125, 125);
+}
+#main-menu ul.submenu li:last-child a{
+    border: none;
+}
+#main-menu li:hover ul.sub-menu{
+    display: block;
+}
+/*Thiết lập border*/
+#main-menu>li>a{
+    position: relative;
+}
+#main-menu>li>a::before{
+    content: "";
+    height: 4px;
+    width: 0px;
+    background-color: #e73c7e;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    transition: 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+#main-menu>li:hover>a::before{
+    width: 100%;
+}
+/*Section*/
+.card{
+    display: flex;
+}
+div.lap{
+    width: 31.3%;
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+    margin: 1%;
+}
+div.lap > img{
+    width: 100%;
+}
+section.laps{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+div.lap >img:hover{
+    transform: scale(1.2);
+}
+.ten{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    color: rgb(140, 46, 55);
+}
+.daudong{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+/*Background*/
+body {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+/*  <p>Cấu hình
+    <br>CPU: AMD Ryzen 9 9600HX 3.3GHz up to 4.9GHz 16MB
+    <br>RAM: 32GB (16x2) DDR5 4800MHz
+    <br>GPU: NVIDIA® GeForce RTX™ 3080Ti 16GB GDDR6
+    <br>Hard Disk: 2TB M.2 NVMe™ PCIe® 4.0 Performance SSD
+    <br>Display: 16" WQXGA (2560 x 1600) 16:10, 165Hz, 3ms
+    <br>ScreenPad™: 14.1” 4K (3840 x 1100) 32:9 Touch display, 60Hz
+    </p>
+*/

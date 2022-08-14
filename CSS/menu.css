@@ -1,0 +1,228 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+
+}
+.container{
+    max-width: 960px;
+    margin: 0px auto;
+
+}
+#header{
+    background-color: #131921;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+}
+#logo{
+    padding: 5px 0px;
+
+}
+#main-menu{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#main-menu li a{
+    color: #f8f8f8;
+    display: block;
+    padding: 18px 20px;
+    text-decoration: none;
+}
+#main-menu ul.sub-menu{
+    position: absolute;
+    background-color: #131921;
+    padding: 15px 0px;
+    list-style: none;
+    width: 200px;
+    border: 1px solid #434343;
+    display: none;
+}
+#main-menu ul.sub-menu a{
+    padding: 8px 15px;
+    border-bottom: 1px solid rgb(62, 62, 62);
+}
+#main-menu ul.sub-menu li:hover a{
+    border-bottom: 1px solid rgb(125, 125, 125);
+}
+#main-menu ul.submenu li:last-child a{
+    border: none;
+}
+#main-menu li:hover ul.sub-menu{
+    display: block;
+}
+/*Thiết lập border*/
+#main-menu>li>a{
+    position: relative;
+}
+#main-menu>li>a::before{
+    content: "";
+    height: 4px;
+    width: 0px;
+    background-color: #e73c7e;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    transition: 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+#main-menu>li:hover>a::before{
+    width: 100%;
+}
+
+/*ten va thong tin*/
+.ten{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    color:darkblue;
+    margin: 10px ;
+}
+.daudong{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    width: 1126px;
+    margin-left: 200px;
+    padding: 1px;
+}
+/*Section*/
+.container1{
+    display: flex;
+    flex-direction: row;
+}
+.container2{
+    height: 5320px;
+    display: flex;
+    flex-direction: row;
+}
+.left{
+    width: 18%;
+    margin: 3px;
+    min-height: 500px;  
+}
+.right{
+    width: 10%;
+    min-width: none;
+}
+.content{
+    height: 2700px;
+    width: 900px;
+    min-height: 500px;
+}
+.content > div{
+    height: 2701px;
+    width: 900px;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+}
+.content> div div{
+    width: 100%;
+    border: 3px;
+    overflow: auto;
+    margin: 10px;
+    padding: 30px;
+}
+.content1 > div{
+    display: flex;
+    flex-direction: row;
+}
+.content1>div div{
+	width: 50%;
+	height: 350px;
+	border: 1px solid gray;
+	overflow: auto;
+	background-color: lightgray;
+	margin: 2px;
+	padding: 15px;
+}
+.left1 div{
+	margin-top: 10px;
+}
+.left1 ul li{
+	text-indent: 20px;
+	margin: 5px;
+}
+.right1 div{
+	margin: 10px auto;
+	padding: 40px;
+	width: 70%;
+	height: 100px;
+	padding: 20px;
+	border: 1px solid gray;
+	text-align: center;
+	border-radius: 10px;
+	background-color: bisque;
+	box-shadow: 5px 5px 5px gray;
+}
+.left1, .right1{
+	width: 15%;
+	min-height: 500px;
+	background-color: #519EC3;
+}
+.content1{
+	width: 70%;
+	min-height: 700px;
+}
+.img1{
+    width: 800px;
+    height: 450px;
+    position: relative;
+}
+.img2{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.img3{
+    width: 256px;
+    height: 256px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.contentt{
+    height: 2700px;
+    width: 860px;
+    min-height: 2700px;
+}
+.contentt > div{
+    padding: 30px;
+    margin: 5px;
+    height: 5300px;
+    width: 850px;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+}
+.contenttt > div{
+    padding: 30px;
+    margin: 5px;
+    height:1900px;
+    width: 850px;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+}
+.contentttt > div{
+    padding: 30px;
+    margin: 5px;
+    height: 4630px;
+    width: 850px;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+}
+.minitext{
+    text-align: center;
+    color: lightgray;
+    font-size: small;
+}
